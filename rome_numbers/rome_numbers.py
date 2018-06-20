@@ -76,11 +76,12 @@ def main():
     with open("rome_numbers/INPUT.txt", 'r') as f:
         line = f.readline()
     if len(line) > 100:
-        raise IncorrectInputValue
+        raise IncorrectInputValue()
 
     first_num, second_num = line.split("/")
     first_num = convert_from_roman(first_num)
     second_num = convert_from_roman(second_num)
+
     nod = find_nod(first_num, second_num)
 
     f_n = convert_to_roman(first_num/nod)
