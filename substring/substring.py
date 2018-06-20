@@ -10,8 +10,11 @@ import re
 def find_substring(line):
     if len(line) > 5000:
         raise ValueError("The line is too big")
+    len_substr = 0
+    while line[:len_substr] in line[len_substr:]:
+        len_substr += 1
 
-    return len(re.findall("(aba)", line))
+    return len(re.findall(line[:len_substr-1], line))
 
 
 def main():
