@@ -1,9 +1,9 @@
 
 def get_num_of_methods(number):
-    if number in [2, 3]:
-        return number - 1
-    elif number == 0 or number == 1:
+    if number in [0, 1]:
         return 0
+    elif number in [2, 3]:
+        return number - 1
     elif number > 3:
         a = 3
         methods = 2
