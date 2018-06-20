@@ -5,7 +5,9 @@
 * python3.6
 ```
 
-## Installing
+## Usage
 ```
-pip install -r req.txt
+python arrows/arrows.py
+...
+python substring/substring.py
 ```
